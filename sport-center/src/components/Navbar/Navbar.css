@@ -1,0 +1,94 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #355592;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 20px;
+}
+.hamburger {
+  display: none;
+}
+
+.logo img {
+  height: 65px;
+  margin-left: 300px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  margin-right: 55px;
+}
+
+/* Responsive toggle */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: white;
+}
+
+/* Mobil görünüm */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 40px;
+    background: black;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+}
+.hamburger {
+  cursor: pointer;
+  font-size: 24px;
+  display: none; /* Büyük ekranlarda gizle, responsive için göster */
+}
+
+/* Mobil görünüm için hamburgeru göster */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  
+  /* Nav linklerini gizle mobilde */
+  .nav-links {
+    display: none;
+  }
+}
+
+.join-btn {
+  background-color: orange;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
