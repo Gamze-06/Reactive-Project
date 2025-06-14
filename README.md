@@ -1,3 +1,6 @@
+# Proje Sport Center Dosyasının içindedir
+
+
 # Sport Center React Projesi
 
 Haftalık olarak yapılan **Sport Center** projesinin React kütüphanesi ile yeniden geliştirilmiş versiyonudur.
